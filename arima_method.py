@@ -135,3 +135,6 @@ class arima_model:
         plt.legend()
         plt.show()
 
+        data_forecast = pred_fc.predicted_mean
+        print(data_forecast)
+
