@@ -136,5 +136,6 @@ class arima_model:
         plt.show()
 
         data_forecast = pred_fc.predicted_mean
-        print(data_forecast)
+        return data_forecast.head(100)
+
 
