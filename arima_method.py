@@ -135,7 +135,24 @@ class arima_model:
         plt.legend()
         plt.show()
 
+
+    def plot_forecast(self, n_steps):
+
+        pred_fc = self.final_result.get_forecast(steps=n_steps)
+
+        plt.figure(figsize=(20,5))
+        plt.plot(pred_fc.predicted_mean)
+        plt.scatter(pred_fc.predicted_mean.index, pred_fc.predicted_mean.values, color="orange", s=150)
+        plt.xlabel("Dates", size=20)
+        plt.ylabel("Bicycles", size=20)
+        
+    
+    def d_forecast(self, n_steps, n):
+        
+        pred_fc = self.final_result.get_forecast(steps=n_steps)
+        
         data_forecast = pred_fc.predicted_mean
-        return data_forecast.head(100)
+        
+        return data_forecast.head(n)
 
-
+        
