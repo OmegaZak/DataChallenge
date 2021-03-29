@@ -150,9 +150,15 @@ class arima_model:
     def d_forecast(self, n_steps, n):
         
         pred_fc = self.final_result.get_forecast(steps=n_steps)
-        
         data_forecast = pred_fc.predicted_mean
-        
         return data_forecast.head(n)
+        
+
+    def print_pred_dday(self, n_steps):
+
+        pred_fc = self.final_result.get_forecast(steps=n_steps)
+        dday = pred_fc.predicted_mean['2021-04-02'] #DDAY 2 April 9 a.m
+        print(f"Predicted for 2 April 9 a.m": {round(dday)}")
+
 
         
