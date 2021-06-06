@@ -11,7 +11,15 @@ In this section, we used the SARIMA (*Seasonnal AutoRegressive Integrated Moving
  + **`arima_method.py`**  python class containing the method 
  + **`arima_script_1.ipynb`** execution script
 +  **`arima_script_2.ipynb`** execution script
+
+
+<img src="prediction/images/onestepforc.png?raw=true"/>
  
+<img src="prediction/images/dynamforc.png?raw=true"/>
+
+<img src="prediction/images/futurforc.png?raw=true"/>
+
+<img src="prediction/images/predc.png?raw=true"/>
 
 
 ### Visualisation part
