@@ -28,3 +28,6 @@ In the visualization part, we imported JSON files of each bike counter of Montpe
 
 The animation is in .mp4 format (**`Animation.mp4`**) in the **visualisation** folder to download (the animation is not optimal due to many problems encountered)
 
+
+<img src="visualisation/images/visualbike.png?raw=true"/>
+
